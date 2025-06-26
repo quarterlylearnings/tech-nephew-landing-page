@@ -123,7 +123,7 @@ body {
     margin: 0 auto 3rem;
 }
 
-.pain-points {
+.problem-examples {
     background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
     padding: 2rem;
     border-radius: 8px;
@@ -131,19 +131,19 @@ body {
     border-left: 4px solid #dc2626;
 }
 
-.pain-points h3 {
+.problem-examples h3 {
     color: #b91c1c;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.pain-points ul {
+.problem-examples ul {
     list-style: none;
     padding: 0;
 }
 
-.pain-points li {
+.problem-examples li {
     margin-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
@@ -155,11 +155,75 @@ body {
     margin-bottom: 0.8rem;
 }
 
-.pain-points li::before {
-    content: "😤";
+.problem-examples li::before {
+    content: "🔧";
     position: absolute;
     left: 0.8rem;
     font-size: 1.2rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+    padding: 3rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    color: #0277bd;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #81d4fa;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(2, 119, 189, 0.2);
+}
+
+.step h4 {
+    color: #01579b;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.step p {
+    color: #2d3748;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Add connector arrows between steps on desktop */
+@media (min-width: 769px) {
+    .step:not(:last-child)::after {
+        content: "→";
+        position: absolute;
+        right: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        color: #0277bd;
+        font-weight: bold;
+    }
 }
 
 /* Solution Section */
@@ -486,12 +550,21 @@ body {
     }
     
     /* Add some spacing/borders on mobile for readability */
-    .pain-points, .solution {
+    .problem-examples, .solution {
         border-radius: 12px;
         margin: 2rem 0;
     }
     
     .testimonial-preview {
         border-left: 4px solid #7c3aed;
+    }
+    
+    /* How It Works mobile adjustments */
+    .steps {
+        gap: 1.5rem;
+    }
+    
+    .step:not(:last-child)::after {
+        display: none;
     }
 }
