@@ -1,15 +1,13 @@
-// Simple footer loader
 async function loadFooter() {
     try {
-        const response = await fetch('../templates/footer.html');
-        const footerHTML = await response.text();
-        document.getElementById('footer-placeholder').innerHTML = footerHTML;
-    } catch (error) {
-        console.error('Could not load footer:', error);
+        const response = await fetch('/templates/footer.html');
+        const html = await response.text();
+        document.getElementById('footer-placeholder').innerHTML = html;
+    } catch (e) {
+        console.error('Could not load footer:', e);
     }
 }
 
-// Load footer when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadFooter);
 } else {
