@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You're in! - Tech Nephew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter+Tight:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="../styles.css">
     <style>
         /* Additional styles specific to success page */
@@ -13,7 +16,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+            background: linear-gradient(135deg, var(--panel) 0%, var(--bg) 100%);
             margin-bottom: 0;
         }
         
@@ -25,7 +28,7 @@
         .checkmark {
             width: 80px;
             height: 80px;
-            background: #ea580c;
+            background: var(--accent);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -50,14 +53,14 @@
         .success-title {
             font-size: 2.5rem;
             font-weight: 800;
-            color: #92400e;
+            color: var(--ink);
             margin-bottom: 1rem;
             line-height: 1.2;
         }
         
         .success-subtitle {
             font-size: 1.3rem;
-            color: #78350f;
+            color: var(--ink-soft);
             margin-bottom: 2rem;
             font-weight: 500;
         }
@@ -68,11 +71,11 @@
             border-radius: 16px;
             margin: 2rem 0;
             box-shadow: 0 4px 20px rgba(217, 119, 6, 0.15);
-            border-left: 4px solid #d97706;
+            border-left: 4px solid var(--accent);
         }
         
         .next-steps h3 {
-            color: #92400e;
+            color: var(--ink);
             margin-bottom: 1.5rem;
             font-size: 1.4rem;
             font-weight: 700;
@@ -91,11 +94,11 @@
             padding: 1rem;
             background: #fefbf7;
             border-radius: 8px;
-            border-left: 3px solid #d97706;
+            border-left: 3px solid var(--accent);
         }
         
         .step-number {
-            background: #ea580c;
+            background: var(--accent);
             color: white;
             width: 24px;
             height: 24px;
@@ -115,12 +118,12 @@
         
         .step-title {
             font-weight: 600;
-            color: #92400e;
+            color: var(--ink);
             margin-bottom: 0.3rem;
         }
         
         .step-description {
-            color: #374151;
+            color: var(--ink);
             font-size: 0.95rem;
             line-height: 1.5;
         }
@@ -209,7 +212,7 @@
         }
         
         .back-link a {
-            color: #ea580c;
+            color: var(--accent);
             text-decoration: none;
             font-weight: 500;
             font-size: 1.1rem;
@@ -312,8 +315,11 @@
         <a href="/">← Back to Tech Nephew</a>
     </div>
 
-    <div id="footer-placeholder"></div>
-
-    <script src="../scripts/footer.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>A project by <a href="https://podcasts.apple.com/us/podcast/quarterly-learnings/id1657022269">Quarterly Learnings</a></p>
+            <p>Questions? <a href="mailto:technephew@quarterlylearnings.com">technephew@quarterlylearnings.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
