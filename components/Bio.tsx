@@ -26,8 +26,8 @@ export function Bio() {
                             {bio.byline}
                         </p>
                         <span className="text-accent">
-                            <a href="https://linkedin.com/in/campbellkearns" target="_blank">
-                                {bio.linkedInUrl}
+                            <a href={bio.linkedInUrl} target="_blank">
+                                (LinkedIn)
                             </a>
                         </span>
                     </div>
