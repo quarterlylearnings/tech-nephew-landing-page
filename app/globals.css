@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f5f0e6;
+  --color-ink: #2a3138;
+  --color-ink-soft: #5b6770;
+  --color-dark: #1a5230;
+  --color-dark-ink: #f5f0e6;
+  --color-panel: #e8f4ee;
+  --color-panel-ink: #1a5230;
+  --color-accent: #bf3a2b;
+  --color-border: #c8b99a;
+
+  --font-heading: var(--font-dm-serif-display), Georgia, serif;
+  --font-body: var(--font-inter-tight), system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+  a:hover {
+    color: var(--color-ink);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+}
+
+/* ── Decorative, pixel-specific shapes — not worth forcing into utility classes ── */
+
+.sun-arc {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: -1px;
+}
+.sun-arc .ray {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.sun-arc .ray.b2 {
+  top: 58px;
+  width: 320px;
+  height: 320px;
+  background: var(--color-bg);
+}
+.sun-arc .ray.b3 {
+  top: 74px;
+  width: 272px;
+  height: 272px;
+  background: var(--color-accent);
+  opacity: 0.6;
+}
+.sun-arc .ray.b4 {
+  top: 88px;
+  width: 228px;
+  height: 228px;
+  background: var(--color-bg);
+}
+@media (min-width: 900px) {
+  .sun-arc {
+    height: 180px;
+  }
+  .sun-arc .ray {
+    width: 1000px;
+    height: 1000px;
+    top: 76px;
+  }
+  .sun-arc .ray.b2 {
+    width: 860px;
+    height: 860px;
+    top: 104px;
+  }
+  .sun-arc .ray.b3 {
+    width: 730px;
+    height: 730px;
+    top: 132px;
+  }
+  .sun-arc .ray.b4 {
+    width: 600px;
+    height: 600px;
+    top: 158px;
+  }
+}
+
+.medallion .disc {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+.medallion .disc .r0 {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.medallion .disc .r1 {
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  background: var(--color-panel);
+}
+.medallion .disc .r2 {
+  position: absolute;
+  inset: 48px;
+  border-radius: 50%;
+  background: var(--color-dark);
+}
+.medallion .disc .r3 {
+  position: absolute;
+  inset: 78px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+  font-size: 34px;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.bio-photo {
+  clip-path: ellipse(50% 42% at 50% 50%);
+}
+
+.problem-card q {
+  quotes: none;
+}
+.problem-card q::before,
+.problem-card q::after {
+  content: none;
+}
