@@ -16,6 +16,9 @@ export function SiteFooter() {
           <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.contact.href}>
             {footer.links.contact.label}
           </a>
+          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.tikTok.href}>
+            {footer.links.tikTok.label}
+          </a>
         </nav>
         <div className="mt-[22px] text-[11.5px] opacity-70">{footer.familyNote}</div>
         <div className="mt-[10px] text-[11px] tracking-[0.1em] opacity-60">{footer.copyright}</div>
