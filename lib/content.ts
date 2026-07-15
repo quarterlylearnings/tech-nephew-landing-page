@@ -39,8 +39,9 @@ export const problems = [
   { num: "02", quote: "I keep getting locked out of my email.", who: "Ron, 71" },
   { num: "03", quote: "I don't know if I should click “update” or not.", who: "Margaret, 64" },
   { num: "04", quote: "My grandkids set it up and now I can't change a thing.", who: "Dale, 73" },
-  { num: "05", quote: "Everyone tells me to just Google it. That doesn't help.", who: "Pat, 69" },
+  { num: "05", quote: "I can't figure out how to video call my grandkids.", who: "Pat, 69" },
   { num: "06", quote: "I'm afraid I'll push the wrong button and break something.", who: "Linda, 70" },
+  { num: "07", quote: "Everyone tells me to just Google it. That doesn't help.", who: "Patrice, 72" },
 ];
 
 export const bio = {
@@ -87,7 +88,7 @@ export const testimonials = [
 
 export const emailSignup = {
   heading: "Want a head start before we talk?",
-  sub: "I'll send one plain-language tip every so often — the kind of thing that saves you a call. No selling, no spam, unsubscribe whenever.",
+  sub: "I'll send one plain-language tip every so often — the kind of thing that saves you a call. (Also useful if you're thinking of this as a gift for a parent — I'll let you know when that's ready.) No selling, no spam, unsubscribe whenever.",
   placeholder: "your@email.com",
   submitLabel: "Keep Me Posted",
 };
