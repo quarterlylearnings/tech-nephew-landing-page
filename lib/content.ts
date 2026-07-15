@@ -7,7 +7,7 @@ export const site = {
     "Tech Nephew is a one-on-one video call service that helps you solve real technology problems, at your pace, without the jargon.",
 };
 
-export const bookingUrl = "/success";
+export const bookingUrl = "https://calendar.app.google/yVa6rUZxiBEENZsg6";
 
 export const hero = {
   heading: [
@@ -36,19 +36,18 @@ export const service = {
 
 export const problems = [
   { num: "01", quote: "I can't get the photos off my phone.", who: "Janet, 67" },
-  { num: "02", quote: "I keep getting locked out of my email.", who: "Ron, 71" },
+  { num: "02", quote: "Everyone tells me to just Google it. That doesn't help.", who: "Patrice, 72" },  
   { num: "03", quote: "I don't know if I should click “update” or not.", who: "Margaret, 64" },
   { num: "04", quote: "My grandkids set it up and now I can't change a thing.", who: "Dale, 73" },
   { num: "05", quote: "I can't figure out how to video call my grandkids.", who: "Pat, 69" },
   { num: "06", quote: "I'm afraid I'll push the wrong button and break something.", who: "Linda, 70" },
-  { num: "07", quote: "Everyone tells me to just Google it. That doesn't help.", who: "Patrice, 72" },
 ];
 
 export const bio = {
   heading: "Hi, I'm your Tech Nephew.",
   byline: "— Brandon Campbell-Kearns",
   photoPath: "/ql-headshot.png",
-  body: "Tech Nephew started where most family tech help starts: with my mom asking why her home assistant was offline at 9pm. Then my aunt. Then her friend. After a few years of these calls, I realized the people I love most weren't getting stuck on hard problems — they were getting stuck because nobody had ever sat with them long enough to explain. So I made the sitting-with-people part the job. I'll meet you exactly where you are. I won't talk over your head, and I won't talk down to you.",
+  body: "Tech Nephew started where most family tech help starts: with my mom. She got stuck troubleshooting her home assistant when it stopped responding one night. Then my aunt, wanting to add text over some photos of hers. Then her best friend, staring down an app that wanted her to make another account. After a few months of these calls, I noticed that the people I love most weren't getting stuck on hard problems. They were getting stuck because nobody had ever sat with them long enough to explain. So, I made the sitting-with-people part the job. I'll meet you exactly where you are. I won't talk over your head, and I won't talk down to you.",
 };
 
 export const steps = [
@@ -60,7 +59,7 @@ export const steps = [
   {
     num: "02",
     title: "We meet on a video call",
-    body: "You show me the problem. Share your screen, or just hold up your phone. We work through it together.",
+    body: "You show me the problem. Share your screen, or just hold up your phone. We'll work through it together.",
   },
   {
     num: "03",
@@ -82,13 +81,13 @@ export const testimonials = [
     meta: "71 · grandfather of six",
     quote:
       "I called him about one thing and we ended up fixing four. He never once said “just” or “simply” — that means a lot when you're the one asking.",
-    italic: true,
+    italic: false,
   },
 ];
 
 export const emailSignup = {
   heading: "Want a head start before we talk?",
-  sub: "I'll send one plain-language tip every so often — the kind of thing that saves you a call. (Also useful if you're thinking of this as a gift for a parent — I'll let you know when that's ready.) No selling, no spam, unsubscribe whenever.",
+  sub: "I'll send one plain-language tip every so often — the kind of thing that saves you a call. (Also useful if you're thinking of this as a gift for a parent — I'll let you know when that's ready.) No selling or spam. Unsubscribe whenever.",
   placeholder: "your@email.com",
   submitLabel: "Keep Me Posted",
 };
@@ -104,6 +103,10 @@ export const footer = {
     contact: {
       label: "Questions",
       href: "mailto:technephew@quarterlylearnings.com",
+    },
+    tikTok: {
+      label: "TikTok",
+      href: "https://www.tiktok.com/@asktechnephew",
     },
   },
   copyright: "© 2026 Tech Nephew · Quarterly Learnings",
@@ -131,7 +134,7 @@ export const success = {
     heading: "Follow the journey",
     body: "Want to watch Tech Nephew come to life? I'm documenting as much as I can of tech support sessions, funny moments, and all the behind-the-scenes of distributing Tech Nephew.",
     handle: "@asktechnephew",
-    href: "https://instagram.com/asktechnephew",
+    href: "https://tiktok.com/@asktechnephew",
   },
   backLink: { label: "← Back to Tech Nephew", href: "/" },
 };
