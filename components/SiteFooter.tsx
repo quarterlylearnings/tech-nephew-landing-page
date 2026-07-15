@@ -10,13 +10,13 @@ export function SiteFooter() {
           <HeadingLines parts={footer.tag} />
         </div>
         <nav className="flex flex-wrap justify-center gap-6 text-[11.5px] font-bold uppercase tracking-[0.2em] opacity-85">
-          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.tikTok.href}>
+          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.tikTok.href} target="_blank">
             {footer.links.tikTok.label}
           </a>
-          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.podcast.href}>
+          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.podcast.href} target="_blank">
             {footer.links.podcast.label}
           </a>
-          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.contact.href}>
+          <a className="text-dark-ink no-underline hover:text-accent" href={footer.links.contact.href} target="_blank">
             {footer.links.contact.label}
           </a>
         </nav>
