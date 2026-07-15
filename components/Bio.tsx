@@ -27,7 +27,7 @@ export function Bio() {
                         </p>
                         <span className="text-accent">
                             <a href="https://linkedin.com/in/campbellkearns">
-                                (linkedin)
+                                {bio.linkedInUrl}
                             </a>
                         </span>
                     </div>

@@ -47,6 +47,7 @@ export const bio = {
   heading: "Hi, I'm your Tech Nephew.",
   byline: "— Brandon Campbell-Kearns",
   photoPath: "/ql-headshot.png",
+  linkedInUrl: "https://linkedin.com/in/campbellkearns",
   body: "Tech Nephew started where most family tech help starts: with my mom. She got stuck troubleshooting her home assistant when it stopped responding one night. Then my aunt, wanting to add text over some photos of hers. Then her best friend, staring down an app that wanted her to make another account. After a few months of these calls, I noticed that the people I love most weren't getting stuck on hard problems. They were getting stuck because nobody had ever sat with them long enough to explain. So, I made the sitting-with-people part the job. I'll meet you exactly where you are. I won't talk over your head, and I won't talk down to you.",
 };
 
@@ -101,7 +102,7 @@ export const footer = {
       href: "https://podcasts.apple.com/us/podcast/quarterly-learnings/id1657022269",
     },
     contact: {
-      label: "Questions",
+      label: "Questions?",
       href: "mailto:technephew@quarterlylearnings.com",
     },
     tikTok: {
